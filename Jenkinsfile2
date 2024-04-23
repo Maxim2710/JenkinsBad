@@ -3,19 +3,19 @@ pipeline {
     stages {
         stage('Run test1.sh') {
             steps {
-                sh 'chmod +x /var/lib/jenkins/workspace/ProjectPipeline/test1.sh'
+                sh 'chmod +x ./test1.sh'
                 sh './test1.sh'
             }
         }
         stage('Run test2.sh') {
             steps {
-                sh 'chmod +x /var/lib/jenkins/workspace/ProjectPipeline/test2.sh'
+                sh 'chmod +x ./test2.sh'
                 sh './test2.sh'
             }
         }
         stage('Run test3.sh') {
             steps {
-                sh 'chmod +x /var/lib/jenkins/workspace/ProjectPipeline/test3.sh'
+                sh 'chmod +x ./test3.sh'
                 sh './test3.sh'
             }
         }
